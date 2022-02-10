@@ -1,0 +1,29 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.content-container {
+
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    
+        height: 100%;
+        width: 100%;
+    
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;   
+    }
+}
+
+@media (max-width: 600px) {
+
+}
+

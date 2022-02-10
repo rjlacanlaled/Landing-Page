@@ -1,0 +1,16 @@
+.main-title {
+    text-align: center;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        font-size: large;
+        margin-top: 8rem;
+        max-width: 80%;
+    }
+}
+
+@media (max-width: 600px) {
+
+}
