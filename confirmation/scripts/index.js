@@ -1,6 +1,6 @@
 (() => {
   const url = window.location.href;
-  const searchParamsDict = searchParamsToDictionary(getSearchParams(url));
+  const searchParamsDict =  URLSearchParams(url);
   createConfirmationPageHTMLElements(searchParamsDict);
 })();
 
