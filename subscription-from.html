@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/subscription-styles.css" />
+    <title>Motown Streaming Subscription Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img />
+        <p>Motown Streaming</p>
+      </div>
+      <nav>
+        <li>Subscribe</li>
+        <li>Download</li>
+        <li>Support</li>
+      </nav>
+      <button>MENU</button>
+    </header>
+    <div class="form-container">
+      <h1>Sign up to start listening!</h1>
+      <form method="GET" action="http://127.0.0.1:5501/index.html">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email."/>
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password."/>
+        <label for="first-name">First Name</label>
+        <input type="text" id="firstName" name="first-name" placeholder="Enter your first name."/>
+        <label for="last-name">Last Name</label>
+        <input type="text" id="lastName" name="last-name" placeholder="Enter your last name."/>
+        <label for="dob">What's your date of birth?</label>
+        <input type="date" id="dob" name="dob" />
+        <label for="gender">What is your gender?</label>
+        <span>
+          <input type="radio" id="male" name="gender" value="male" />
+          <label for="gender">Male</label>
+          <input type="radio" id="femail" name="gender" value="female" />
+          <label for="gender">Female</label>
+        </span>
+        <label for="plan">Choose a Subscription Plan</label>
+        <select name="plan" id="subscriptionPlan">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <label for="free-album">Choose a Freebie</label>
+        <select name="free-album" id="freeAlbum">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
