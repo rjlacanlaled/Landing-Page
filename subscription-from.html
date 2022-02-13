@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/subscription-styles.css" />
+    <script defer src="scripts/form.js"></script>
+    <script defer src="scripts/searchParameterUtils.js"></script>
     <title>Motown Streaming Subscription Form</title>
   </head>
   <body>
@@ -28,7 +30,7 @@
     </header>
     <div class="form-container">
       <h1>Sign up to start listening!</h1>
-      <form method="GET" action="http://127.0.0.1:5501/index.html">
+      <form id="subscriptionForm">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Enter your email."/>
         <label for="password">Password</label>
