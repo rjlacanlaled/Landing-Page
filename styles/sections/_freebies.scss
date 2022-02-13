@@ -5,8 +5,7 @@
   height: 80vh;
   max-height: 1000px;
   min-height: 500px;
-  background-color: black;
-  color: white;
+  color: black;
 
   h2 {
     font-size: 2rem;
@@ -20,6 +19,7 @@
     overflow-x: scroll;
     gap: 2px;
     margin: 0 10px 0 10px;
+    -webkit-text-stroke: 0.5px black;
 
     .freebies-item {
       background-position: center center;

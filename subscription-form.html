@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/subscription-styles.css" />
+    <title>Motown Streaming Subscription Form</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo-container">
+        <img />
+        <p>Motown Streaming</p>
+      </div>
+      <nav>
+        <li>Subscribe</li>
+        <li>Download</li>
+        <li>Support</li>
+      </nav>
+      <button>MENU</button>
+    </header>
+    <div class="form-container">
+      <h1>Sign up to start listening!</h1>
+      <form id="subscriptionForm">
+        <label for="email">Email</label>
+        <input data-input="data-input" type="email" id="email" name="email" placeholder="Enter your email."/>
+        <label for="password">Password</label>
+        <input data-input="data-input" type="password" id="password" name="password" placeholder="Enter your password."/>
+        <label for="firstName">First Name</label>
+        <input data-input="data-input" type="text" id="firstName" name="firstName" placeholder="Enter your first name." required/>
+        <label for="lastName">Last Name</label>
+        <input data-input="data-input" type="text" id="lastName" name="lastName" placeholder="Enter your last name." required/>
+        <label for="dob">What's your date of birth?</label>
+        <input data-input="data-input" type="date" id="dob" name="dob" />
+        <label for="plan">Choose a Subscription Plan</label>
+        <select data-input="data-input" name="plan" id="subscriptionPlans" required></select>
+        <label for="freeAlbum">Choose a Freebie</label>
+        <select data-input="data-input" name="freeAlbum" id="freeAlbums" required></select>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+  <script src="scripts/userInterfaceUtils.js"></script>
+  <script src="scripts/plans.js"></script>
+  <script src="scripts/freebies.js"></script>
+  <script src="scripts/searchParameterUtils.js"></script>
+  <script src="scripts/form.js"></script>
+</html>
