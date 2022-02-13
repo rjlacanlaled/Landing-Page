@@ -6,13 +6,14 @@ function createElementWithOptions(tagName, options = {}) {
   attachTextToElement(element, options.text);
   addClassListToElement(element, options.classList);
   addIdToElement(element, options.id);
+  return element;
 }
 
 
-function attachTextToElement(element, text) {
-    if (text == null) return;
-    const text = document.createTextNode(text);
-    element.appendChild(text);
+function attachTextToElement(element, textContent) {
+    if (textContent == null) return;
+    const textNode = document.createTextNode(textContent);
+    element.appendChild(textNode);
 }
 
 function addClassListToElement(element, classList) {
