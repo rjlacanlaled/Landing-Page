@@ -1,0 +1,116 @@
+.plans-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #efefef;
+
+  padding: 40px 100px 40px 100px;
+
+  h2 {
+    font-size: 2.5rem;
+    padding: 50px;
+    text-align: center;
+  }
+
+  .plan-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 5px;
+
+    .plan-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      background-color: white;
+      width: 100%;
+      padding: 20px;
+      border-radius: 20px;
+      max-width: 300px;
+      min-height: 600px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+
+      .plan-title {
+        h3,
+        h6,
+        p {
+          text-align: center;
+        }
+
+        h3 {
+          font-size: 2rem;
+        }
+
+        h6 {
+          font-size: 1.2rem;
+        }
+
+        p {
+          font-size: 1rem;
+          padding-bottom: 20px;
+          margin-bottom: 10px;
+          border-bottom: 1px solid black;
+        }
+      }
+
+      .plan-features {
+        ul {
+          list-style: none;
+          padding-left: 0;
+        }
+        li {
+          font-size: 1.3rem;
+          position: relative;
+          padding-left: 1.5em;
+        }
+        li:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          width: 1em;
+          height: 1em;
+          background: url("data:image/svg+xml;utf8,<?xml version='1.0' encoding='utf-8'?><svg width='18' height='18' viewBox='0 0 1792 1792' xmlns='http://www.w3.org/2000/svg'><path d='M1671 566q0 40-28 68l-724 724-136 136q-28 28-68 28t-68-28l-136-136-362-362q-28-28-28-68t28-68l136-136q28-28 68-28t68 28l294 295 656-657q28-28 68-28t68 28l136 136q28 28 28 68z'/></svg>")
+            no-repeat;
+        }
+      }
+
+      button {
+        color: white;
+        padding: 20px;
+        border-radius: 30px;
+        background-color: black;
+        border-style: none;
+        text-transform: uppercase;
+
+        margin-top: 30px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 1028px) {
+  .plans-container {
+    padding: 10px 80px 10px 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .plans-container {
+    padding: 10px 60px 10px 60px;
+
+    h2 {
+      font-size: 2rem;
+      padding: 50px;
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .plans-container {
+    padding: 10px 0px 10px 0px;
+  }
+}
