@@ -1,0 +1,6 @@
+(() => {
+    renderHeadline();
+    renderFeatures();
+    renderPlans();
+    renderFreebies();
+})();
