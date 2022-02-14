@@ -9,21 +9,20 @@ function createElementWithOptions(tagName, options = {}) {
   return element;
 }
 
-
 function attachTextToElement(element, textContent) {
-    if (textContent == null) return;
-    const textNode = document.createTextNode(textContent);
-    element.appendChild(textNode);
+  if (textContent == null) return;
+  const textNode = document.createTextNode(textContent);
+  element.appendChild(textNode);
 }
 
 function addClassListToElement(element, classList) {
-    if (classList == null || classList.length < 1) return;
-    classList.forEach(classItem => {
-        element.classList.add(classItem);
-    });
+  if (classList == null || classList.length < 1) return;
+  classList.forEach((classItem) => {
+    element.classList.add(classItem);
+  });
 }
 
 function addIdToElement(element, id) {
-    if (id == null || id === '') return;
-    element.id = id;
+  if (id == null || id === "") return;
+  element.id = id;
 }

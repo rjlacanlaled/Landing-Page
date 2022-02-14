@@ -7,7 +7,7 @@ function createElementWithOptions(tagName, options = {}) {
   addClassListToElement(element, options.classList);
   addIdToElement(element, options.id);
   setImageUrl(element, options.src);
-  setBackgroundImageUrl(element, options.backgroundUrl)
+  setBackgroundImageUrl(element, options.backgroundUrl);
   return element;
 }
 

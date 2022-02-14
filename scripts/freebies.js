@@ -3,7 +3,7 @@ const freebiesContainer = document.getElementById("freebiesContainer");
 // UI Items
 
 const freebiesTitle = convertToElementDictionary("h2", {
-  text: "Get a free CD album on your first month ...",
+  text: "Get a free CD album on your first month",
 });
 
 const freebieItemParams = [
@@ -54,24 +54,25 @@ const freebieItemsContainer = convertToElementDictionary(
   freebieItemTemplates
 );
 
-
 // End UI Items
 
 function renderFreebies() {
   createNestedElements(freebiesContainer, [
     freebiesTitle,
-    freebieItemsContainer
+    freebieItemsContainer,
   ]);
 }
 
 function createFreebieItemFromTemplate(params) {
-  if (params == null) return;  
+  if (params == null) return;
   const freebieContentTitle = convertToElementDictionary("h3", {
     text: params.mainText,
   });
+
   const freebieContentSubtitle = convertToElementDictionary("h5", {
     text: params.subText,
   });
+
   const freebieContentContainer = convertToElementDictionary(
     "div",
     { classList: ["freebie-content"] },
@@ -81,12 +82,15 @@ function createFreebieItemFromTemplate(params) {
     text: "Claim now",
     id: params.buttonId,
   });
+
   const freebieDownArrow = convertToElementDictionary("img", {});
+
   const freebieButtonContainer = convertToElementDictionary(
     "div",
     { classList: ["freebie-button-container"] },
     [freebieButton, freebieDownArrow]
   );
+
   const freebieItemContainer = convertToElementDictionary(
     "div",
     { classList: ["freebies-item"], backgroundUrl: params.backgroundUrl },
