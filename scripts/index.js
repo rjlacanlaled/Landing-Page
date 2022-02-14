@@ -12,5 +12,5 @@
 })();
 
 function onButtonClick(e) {
-  window.open('../subscription-form.html');
+  window.open("../subscription-form.html");
 }
