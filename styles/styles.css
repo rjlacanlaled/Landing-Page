@@ -223,17 +223,8 @@ footer {
 }
 
 @media (max-width: 480px) {
-  .freebies-container h2 {
-    font-size: 1rem;
-  }
   .freebies-container .freebies-items .freebies-item {
     min-width: 100%;
-  }
-}
-
-@media (max-width: 300px) {
-  .freebies-container h2 {
-    font-size: 0.8rem;
   }
 }
 
