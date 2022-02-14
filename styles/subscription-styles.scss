@@ -1,5 +1,16 @@
 @import "sections/header";
-@import "sections/main";
+
+* {
+  font-family: "Fjalla One", sans-serif;
+
+  a {
+    text-decoration: none;
+  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+
+}
 
 body {
   display: flex;
@@ -29,7 +40,6 @@ body {
   .form-container {
     display: flex;
     flex-direction: column;
-    background-color: turquoise;
     align-self: center;
     width: 50%;
     max-width: 400px;
@@ -37,11 +47,36 @@ body {
     padding: 20px;
     gap: 30px;
 
+    h1 {
+      border-bottom: 1px solid black;
+      padding-bottom: 20px;
+      width: 100%;
+      text-align: center;
+    }
+
     form {
       display: flex;
       flex-direction: column;
       width: 100%;
       gap: 10px;
+
+      label {
+        font-size: 1.2rem;
+      }
+
+      input,
+      select,
+      button {
+        padding: 10px;
+        border-radius: 10px;
+        border-style: none;
+      }
+
+      button {
+        cursor: pointer;
+        background-color: #aa1846;
+        color: white;
+      }
     }
   }
 }

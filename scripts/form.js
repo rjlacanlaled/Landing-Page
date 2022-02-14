@@ -53,7 +53,6 @@ function getInputDataUrl() {
 
 function onFormSubmit(e) {
     e.preventDefault();
-    console.log(getInputDataUrl());
     window.location = `${targetUrl}?${getInputDataUrl()}`;
 }
 

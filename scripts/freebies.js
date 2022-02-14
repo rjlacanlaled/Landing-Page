@@ -3,7 +3,7 @@ const freebiesContainer = document.getElementById("freebiesContainer");
 // UI Items
 
 const freebiesTitle = convertToElementDictionary("h2", {
-  text: "You get a free Tylor Swift CD album on your first month!",
+  text: "Get a free CD album on your first month ...",
 });
 
 const freebieItemParams = [
@@ -54,21 +54,18 @@ const freebieItemsContainer = convertToElementDictionary(
   freebieItemTemplates
 );
 
-const freebiesSubtitle = convertToElementDictionary("h2", {
-  text: "Sent to your registered address!",
-});
 
 // End UI Items
 
 function renderFreebies() {
   createNestedElements(freebiesContainer, [
     freebiesTitle,
-    freebieItemsContainer,
-    freebiesSubtitle,
+    freebieItemsContainer
   ]);
 }
 
 function createFreebieItemFromTemplate(params) {
+  if (params == null) return;  
   const freebieContentTitle = convertToElementDictionary("h3", {
     text: params.mainText,
   });

@@ -98,14 +98,15 @@
 }
 
 footer {
-  background-color: cyan;
+  background-color: #AA1846;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  padding: 200px 50px 200px 50px;
+  padding: 100px 50px 30px 50px;
+  margin-top: 50px;
 }
 
 .freebies-container {
@@ -117,8 +118,8 @@ footer {
       -ms-flex-direction: column;
           flex-direction: column;
   height: 80vh;
-  max-height: 1000px;
-  min-height: 500px;
+  max-height: 700px;
+  min-height: 650px;
   color: black;
 }
 
@@ -159,6 +160,7 @@ footer {
 }
 
 .freebies-container .freebies-items .freebies-item .freebie-content {
+  font-size: 1.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,6 +204,7 @@ footer {
   background-color: black;
   border: 2px solid white;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 @media (max-width: 1028px) {
@@ -300,12 +303,17 @@ header nav {
   padding: 15px;
 }
 
+header nav li {
+  cursor: pointer;
+}
+
 header button {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
   margin-right: 10px;
   visibility: hidden;
+  cursor: pointer;
 }
 
 @media (max-width: 728px) {
@@ -331,25 +339,13 @@ header button {
   }
   header nav {
     display: none;
-    color: white;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    right: 0;
-    height: 200vh;
-    max-height: 200vh;
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
     width: 40%;
     z-index: 6;
-    padding-top: 500px;
     gap: 20px;
   }
   header button {
@@ -365,10 +361,26 @@ header button {
             flex: 1;
     visibility: visible;
   }
+  header button:hover + nav, header nav:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
 }
 
 .headline-container {
-  background-color: #1e74de;
+  background-color: #AA1846;
   color: white;
   margin-top: 100px;
   height: 70vh;
@@ -416,6 +428,7 @@ header button {
   border-radius: 20px;
   border-style: none;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .headline-container .headline-buttons .headline-left-button {
@@ -600,6 +613,7 @@ header button {
   margin-top: 30px;
   margin-bottom: 10px;
   width: 100%;
+  cursor: pointer;
 }
 
 @media (max-width: 1028px) {

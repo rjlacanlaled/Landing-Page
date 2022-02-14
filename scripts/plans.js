@@ -1,6 +1,7 @@
 const plansContainer = document.getElementById("plansContainer");
 
 // UI Items
+
 const plansContainerTitle = convertToElementDictionary("h2", {
   text: "Pick your plan",
 });
@@ -15,7 +16,7 @@ const planItemParams = [
       "Play anywhere - even offline",
       "One-time or subscription plans",
     ],
-    planButtonid: 'plan1',
+    planButtonid: "plan1",
   },
   {
     planTitleText: "Duo",
@@ -25,7 +26,7 @@ const planItemParams = [
       "2 Premium accounts for a couple under one roof",
       "Ad-free music listening, play offline, on-demand playback",
     ],
-    planButtonid: 'plan2',
+    planButtonid: "plan2",
   },
   {
     planTitleText: "Family",
@@ -36,18 +37,17 @@ const planItemParams = [
       "Block explicit music",
       "Ad-free music listening, play offline, on-demand playback",
     ],
-    planButtonid: 'plan3'
+    planButtonid: "plan3",
   },
 ];
 
-const planItemTemplates = planItemParams.map(item => {
-    return createPlanItemFromTemplate(item);
+const planItemTemplates = planItemParams.map((item) => {
+  return createPlanItemFromTemplate(item);
 });
-;
-
 const planItemsContainer = convertToElementDictionary(
   "div",
-  { classList: ["plan-items"] }, planItemTemplates
+  { classList: ["plan-items"] },
+  planItemTemplates
 );
 
 // End UI Items
@@ -60,6 +60,7 @@ function renderPlans() {
 }
 
 function createPlanItemFromTemplate(params) {
+  if (params == null) return;
   const planTitlePlanName = convertToElementDictionary("h3", {
     text: params.planTitleText,
   });
@@ -87,6 +88,7 @@ function createPlanItemFromTemplate(params) {
     {},
     planFeatureListItems
   );
+
   const planFeaturesContainer = convertToElementDictionary(
     "div",
     { classList: ["plan-features"] },

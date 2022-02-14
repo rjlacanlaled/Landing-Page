@@ -2,7 +2,7 @@ $left-button-color: #191414;
 $right-button-color: white;
 
 .headline-container {
-  background-color: #1e74de;
+  background-color: #AA1846;
 
   color: white;
 
@@ -43,6 +43,7 @@ $right-button-color: white;
       border-radius: 20px;
       border-style: none;
       text-transform: uppercase;
+      cursor: pointer;
     }
 
     .headline-left-button {
