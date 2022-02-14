@@ -86,7 +86,7 @@ header button {
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   header {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -99,19 +99,23 @@ header button {
             flex: 1;
   }
   header nav {
-    display: none;
-    background-color: black;
     position: fixed;
     top: 0;
     right: 0;
-    height: 100vh;
-    width: 40%;
+    height: 0;
     z-index: 6;
+    width: 0;
     gap: 20px;
+    -webkit-transition: width 250ms;
+    transition: width 250ms;
+  }
+  header nav li {
+    display: none;
   }
   header button {
     z-index: 10;
     color: white;
+    width: 200px;
     max-width: 30%;
     padding: 5px;
     border-radius: 20px;
@@ -123,9 +127,9 @@ header button {
     visibility: visible;
   }
   header button:hover + nav, header nav:hover {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    opacity: 0.9;
+    width: 40vw;
+    height: 100vh;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -137,6 +141,12 @@ header button {
         -ms-flex-align: center;
             align-items: center;
     gap: 20px;
+    background-color: black;
+  }
+  header button:hover + nav li, header nav:hover li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
