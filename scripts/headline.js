@@ -2,7 +2,7 @@ const headlineContainer = document.getElementById("headlineContainer");
 
 // UI Items
 
-const headlineTitle = convertToElementDictionary("h1", {text: "Your first month is on us!"});
+const headlineTitle = convertToElementDictionary("h1", {text: "Get 1 month for free!"});
 const headlineSubtitle = convertToElementDictionary("h3", {text: "Just ₱99/month after. Cancel anytime."});
 const headlineLeftButton = convertToElementDictionary("button", {text: "subscribe", classList: ['headline-left-button']});
 const headlineRightButton = convertToElementDictionary("button", {text: "View Plans", classList: ['headline-right-button']});

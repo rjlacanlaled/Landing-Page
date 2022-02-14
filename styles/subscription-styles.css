@@ -64,12 +64,17 @@ header nav {
   padding: 15px;
 }
 
+header nav li {
+  cursor: pointer;
+}
+
 header button {
   -webkit-box-flex: 0.5;
       -ms-flex: 0.5;
           flex: 0.5;
   margin-right: 10px;
   visibility: hidden;
+  cursor: pointer;
 }
 
 @media (max-width: 728px) {
@@ -95,25 +100,13 @@ header button {
   }
   header nav {
     display: none;
-    color: white;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: fixed;
-    right: 0;
-    height: 200vh;
-    max-height: 200vh;
     background-color: black;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
     width: 40%;
     z-index: 6;
-    padding-top: 500px;
     gap: 20px;
   }
   header button {
@@ -129,6 +122,22 @@ header button {
             flex: 1;
     visibility: visible;
   }
+  header button:hover + nav, header nav:hover {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 20px;
+  }
 }
 
 * {
@@ -141,10 +150,6 @@ header button {
 
 * a {
   text-decoration: none;
-}
-
-* li {
-  list-style: none;
 }
 
 body {
@@ -189,7 +194,6 @@ body .form-container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: turquoise;
   -ms-flex-item-align: center;
       align-self: center;
   width: 50%;
@@ -199,6 +203,13 @@ body .form-container {
           align-items: center;
   padding: 20px;
   gap: 30px;
+}
+
+body .form-container h1 {
+  border-bottom: 1px solid black;
+  padding-bottom: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 body .form-container form {
@@ -211,5 +222,23 @@ body .form-container form {
           flex-direction: column;
   width: 100%;
   gap: 10px;
+}
+
+body .form-container form label {
+  font-size: 1.2rem;
+}
+
+body .form-container form input,
+body .form-container form select,
+body .form-container form button {
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+
+body .form-container form button {
+  cursor: pointer;
+  background-color: #aa1846;
+  color: white;
 }
 /*# sourceMappingURL=subscription-styles.css.map */
